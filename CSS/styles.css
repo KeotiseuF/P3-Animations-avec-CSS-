@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("polices/Roboto/Roboto-Regular") format("truetype");
+  font-weight: normal;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+}
+body h1 {
+  font-size: x-large;
+}
+
+/*Maps*/
+#logo {
+  width: 50%;
+  margin: 5%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header #sub_header {
+  background-color: rgb(246, 246, 246);
+}
+header #sub_header #localisation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e9e9e9;
+  box-shadow: inset 0px 15px 5px -11px rgba(208, 208, 208, 0.86);
+  padding-right: 8%;
+}
+header #sub_header #localisation p {
+  margin-left: 6%;
+  font-weight: bold;
+}
+header #sub_header #reservation {
+  text-align: center;
+  margin: 12% 0%;
+}
+header #sub_header #reservation h1 {
+  width: 76%;
+  margin-left: 12%;
+}
+header #sub_header #reservation input {
+  color: white;
+  border-radius: 36px;
+  width: 250px;
+  height: 58px;
+  background: linear-gradient(351deg, #9356DC 0%, #FF79DA 100%);
+  border: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

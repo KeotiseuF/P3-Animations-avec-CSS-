@@ -1,0 +1,16 @@
+@mixin position-inHead 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin button ($width: $width-b)
+{
+    color: white;
+    border-radius: 36px;
+    width: $width-b;
+    height: 58px;
+    background: map-get($color, button);
+    border: none;
+}

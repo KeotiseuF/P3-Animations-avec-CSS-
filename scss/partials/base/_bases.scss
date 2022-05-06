@@ -1,0 +1,23 @@
+*
+{
+    box-sizing: border-box;
+}
+
+@font-face 
+{
+    font-family: "Roboto";
+    src: url("polices/Roboto/Roboto-Regular") format("truetype");
+    font-weight: normal;
+}
+
+body
+{
+    font-family: "Roboto", sans-serif;
+    font-size: large;
+    
+    & h1
+
+    {
+        font-size: x-large;
+    }
+}
