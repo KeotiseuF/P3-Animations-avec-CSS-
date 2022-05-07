@@ -5,12 +5,26 @@
     align-items: center;
 }
 
-@mixin button ($width: $width-b)
+@mixin button ($width: $width-b, $deg: $deg-b)
 {
     color: white;
     border-radius: 36px;
-    width: $width-b;
+    width: $width;
     height: 58px;
-    background: map-get($color, button);
-    border: none;
+    background: linear-gradient($deg, $colorP 0%, #FF79DA 100%);
+    border: none; 
+    cursor: pointer;
+    box-shadow: $shadow;
+}
+
+@mixin chiffres 
+{
+   background-color: $colorP;
+   color: white;
+   border-radius: 50%;
+   font-size: small;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }

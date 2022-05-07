@@ -1,0 +1,72 @@
+h1
+{
+    margin: 26px 22px;
+}
+
+nav
+{
+    display: flex;
+    margin-left: 4%;
+    height: 365px;
+
+    & #chiffres
+    {
+        width: 30px;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 316px;
+        margin-left: 1%;
+        
+        & p 
+        {
+            @include chiffres;
+        }
+
+        & .menu
+        {
+            margin: 33px 0px;
+        }
+    }
+
+    & #navigation
+    {
+        width: 100%;
+        padding-left: 0%;
+        margin: 0px 17px;
+
+        & a
+        {
+            background-color: $colorS;
+            margin: 0px 0px 27px 0px;
+            display: flex;
+            align-items: center;
+            height: 86px;
+            border-radius: 27px;
+            padding-left: 38px;
+            color: black;
+            font-weight: $weight;
+            box-shadow: $shadow;
+
+            & i
+            {
+                margin-right: 20px;
+                font-size: larger;
+                color: darken($colorS, 50);
+            }
+
+            &:hover
+            {
+                background-color: darken($colorS, 2);
+                
+                & i
+                {
+                    color: $colorP;
+                }
+            }
+
+        }
+    }
+}

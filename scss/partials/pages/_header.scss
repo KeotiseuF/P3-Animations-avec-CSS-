@@ -1,17 +1,18 @@
 header
 {
     @include position-inHead;
+    margin-bottom: $bottom-s;
 
     & #sub_header
     {
-        background-color: map-get($color, localisation);
+        background-color: $colorS;
 
         & #localisation
         {
             @include position-inHead;
             flex-direction: row;
             justify-content: center;
-            background-color: darken(map-get($color, localisation), 5);
+            background-color: darken($colorS, 5);
             box-shadow: inset 0px 15px 5px -11px rgba(208,208,208,0.86);
             padding-right: 8% ;
         
@@ -36,6 +37,7 @@ header
             & input
             {
                 @include button;
+                margin-top: 5%;
             }
         }
     }
