@@ -1,0 +1,66 @@
+main
+{
+    background-color: $colorS;
+    padding: 20px 0px 35px;
+
+    & section
+    {
+        margin: 13px;
+
+        & .carte
+        {
+            background-color: white;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
+            margin: 2%;
+            border-radius: 17px;
+            margin-bottom: 5%;
+            height: 290px;
+
+            & .cadre_img
+            {
+                overflow: hidden;
+                height: 208px;
+                border-radius: 13px 13px 0px 0px; 
+                display: flex;
+                justify-content: end;
+            }
+
+            & .body
+            {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 62px;
+                justify-content: center;
+                margin: 3% 5%; 
+                
+                & label
+                {
+                    position: absolute;
+                    left: 82%;
+                    height: 40px;
+                }
+
+                & p
+                {
+                    margin: 0%;
+                }
+            }
+        }
+    }
+}
+
+.new
+{
+    z-index: 1;
+    width: 100px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: absolute;
+    background-color: $colorN;
+    color: darken($colorN, 40);
+    margin-right: 20px;
+}

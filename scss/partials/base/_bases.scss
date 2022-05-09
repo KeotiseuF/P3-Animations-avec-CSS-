@@ -6,7 +6,14 @@
 @font-face 
 {
     font-family: "Roboto";
-    src: url("polices/Roboto/Roboto-Regular") format("truetype");
+    src: url("/polices/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face 
+{
+    font-family: "Shrikhand";
+    src: url("/polices/Shrikhand/Shrikhand-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 
@@ -22,13 +29,25 @@ body
         margin: 26px 22px;
     }
 
-    ul
+    & ul
     {
         list-style-type: none;
     }
 
-    a
+    & a
     {
         text-decoration: none;
+        color: black;
+    }
+
+    & h2
+    {
+        font-size: large;
+        margin: 0px;
+    }
+
+    & i
+    {
+        font-size: larger;
     }
 }

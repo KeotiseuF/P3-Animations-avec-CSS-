@@ -1,0 +1,34 @@
+footer
+{
+    background-color: darken($colorS, 75);
+    color: white;
+    padding: 23px 28px;
+
+    h2
+    {
+        font-family: "Shrikhand", sans-serif;
+        font-size: larger;
+        font-weight: normal;
+    }
+
+    & ul
+    {
+        padding-left: 0%;
+
+        & li
+        {
+            margin-bottom: 2%;
+
+            a
+            {
+                color: white;
+                
+                &  i
+                {
+                    font-size: small;
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+}

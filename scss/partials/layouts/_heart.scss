@@ -1,0 +1,39 @@
+i
+{
+   font-size: 150px;
+}
+
+input
+{
+  display:none;
+}
+
+.custom-checkbox .checked 
+{
+  position: absolute;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: all 1000ms ease-in-out;
+  background: linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.unchecked
+{
+    position: absolute;
+}
+
+.custom-checkbox input:checked~.checked 
+{
+  display: inline-block;
+  transform: scale(1);
+  background: linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-checkbox input:checked~.unchecked 
+{
+  display: none;
+}
