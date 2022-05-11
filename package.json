@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/styles.scss:./CSS/styles.css --style expanded"
+    "sass": "sass --watch ./scss/styles.scss:./CSS/styles.css --style expanded",
+    "sass": "sass --watch ./scss/stylesR.scss:./CSS/stylesR.css --style expanded"
   },
   "repository": {
     "type": "git",

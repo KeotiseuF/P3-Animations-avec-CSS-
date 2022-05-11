@@ -56,9 +56,9 @@ nav
                 color: darken($colorS, 50);
             }
 
-            &:hover
+            &:focus
             {
-                background-color: darken($colorS, 2);
+                background-color: lighten($colorP, 35);
                 
                 & i
                 {

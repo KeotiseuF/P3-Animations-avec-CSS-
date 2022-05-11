@@ -6,6 +6,7 @@ header
     & #sub_header
     {
         background-color: $colorS;
+        width: 100%;
 
         & #localisation
         {
@@ -30,14 +31,25 @@ header
 
             & h1
             {
-                width: 76%;
+                width: 68%;
                 margin-left: 12%;
+            }
+
+            & p
+            {
+                margin: 0% 3%;
             }
 
             & input
             {
                 @include button;
                 margin-top: 5%;
+
+                &:hover
+                {
+                    filter: brightness(1.25);
+                    box-shadow: 0px 8px 15px rgb(0% 0% 0% / 34%);
+                }
             }
         }
     }

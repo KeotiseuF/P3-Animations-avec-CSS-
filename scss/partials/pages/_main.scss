@@ -7,6 +7,16 @@ main
     {
         margin: 13px;
 
+        & .custom-checkbox
+        {
+            position: absolute;
+            left: 82%;
+            height: 40px;
+            z-index: 1;
+            margin-top: 231px;
+            font-size: x-large;
+        }
+
         & .carte
         {
             background-color: white;
@@ -14,7 +24,7 @@ main
             margin: 2%;
             border-radius: 17px;
             margin-bottom: 5%;
-            height: 290px;
+            height: 295px;
 
             & .cadre_img
             {
@@ -33,17 +43,11 @@ main
                 height: 62px;
                 justify-content: center;
                 margin: 3% 5%; 
-                
-                & label
-                {
-                    position: absolute;
-                    left: 82%;
-                    height: 40px;
-                }
 
                 & p
                 {
                     margin: 0%;
+                    font-size: 20px;
                 }
             }
         }

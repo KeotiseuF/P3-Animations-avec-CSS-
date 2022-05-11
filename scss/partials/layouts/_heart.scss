@@ -1,11 +1,11 @@
-i
+.inputH
 {
-   font-size: 150px;
-}
-
-input
-{
-  display:none;
+    position: absolute;
+    transform: scale(1.5);
+    z-index: 1;
+    opacity: 0;
+    left: 5px;
+    top: 3px;
 }
 
 .custom-checkbox .checked 

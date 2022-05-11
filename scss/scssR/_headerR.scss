@@ -1,0 +1,31 @@
+header
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 339px;
+
+    & i 
+    {
+        font-size: xx-large;
+    }
+
+    & #logo
+    {
+        margin: 5% 15% 3%;
+    }
+
+    & .cadre_img:nth-child(3)
+    {
+        height: 363px; 
+        flex-grow: 1;
+
+        & .img1
+
+        {
+            width: 100%;   
+            height: 361px;
+        }
+        
+    }
+}
