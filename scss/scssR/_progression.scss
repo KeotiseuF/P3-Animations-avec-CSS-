@@ -1,0 +1,61 @@
+@keyframes progression
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+        
+    to 
+    {
+        opacity: 1;
+    }
+    
+}
+
+
+
+.prg1
+{
+    animation: progression 1s ;
+}
+
+.prg2
+{
+    animation: progression 2s ;
+}
+
+.prg3
+{
+    animation: progression 3s ;
+}
+
+.prg4
+{
+    animation: progression 4s ;
+}
+
+.prg5
+{
+    animation: progression 5s ;
+}
+
+.prg6
+{
+    animation: progression 6s ;
+}
+
+.prg7
+{
+    animation: progression 7s ;
+}
+
+.prg8
+{
+    animation: progression 8s ;
+}
+
+.prg9
+{
+    animation: progression 9s ;
+}

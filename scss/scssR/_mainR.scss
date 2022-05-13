@@ -33,15 +33,16 @@ main
         & .titreS
         {
             margin: 9% 5% 0%;
-            font-weight: normal;
-            font-size: x-large;
+            font-size: larger;
             text-transform: uppercase;
+            font-family: "Roboto-thin";
+            font-weight: bold;
         }
 
         & .barre
         {
             background-color: $colorN;
-            width: 61px;
+            width: 55px;
             height: 4px;
             margin: 1% 5% 5%;
         }
@@ -58,18 +59,22 @@ main
             justify-content: center;
             align-content: space-between;
             box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
-            transition: transform 1s ease-in-out;
-            transform-origin: top;
 
             & p, & h2
             {
-                margin: 1% 4%;
+                margin: 5px 19px;
+            }
+            
+            & p:not(.prix)
+            {
+              font-family: "Roboto-thin";
+              font-weight: bold;
+              font-size: medium;
             }
 
             & .prix 
             {
-                margin: 5%;
-                padding-top: 5%;
+                margin: 30px 25px 0px;            
                 font-weight: bold;
             }
         }

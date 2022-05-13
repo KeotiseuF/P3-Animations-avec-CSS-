@@ -42,12 +42,14 @@ main
                 flex-wrap: wrap;
                 height: 62px;
                 justify-content: center;
-                margin: 3% 5%; 
+                margin: 9px 22px; 
 
                 & p
                 {
+                    font-family: "Roboto-Thin";
                     margin: 0%;
-                    font-size: 20px;
+                    font-size: 18px;
+                    font-weight: bold;
                 }
             }
         }
@@ -67,4 +69,5 @@ main
     background-color: $colorN;
     color: darken($colorN, 40);
     margin-right: 20px;
+    font-weight: bold;
 }
