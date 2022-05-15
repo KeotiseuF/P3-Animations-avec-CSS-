@@ -51,7 +51,7 @@ $color: #333; // the rest
   }
   .bubble:nth-child(1) {
     margin-top: 2.5vh;
-    left: 58%;
+    left: 39%;
     width: 2.5vh;
     height: 2.5vh;
     background-color: lighten($color, 7%);
@@ -59,7 +59,7 @@ $color: #333; // the rest
   }
   .bubble:nth-child(2) {
     margin-top: 3vh;
-    left: 52%;
+    left: 37%;
     width: 2vh;
     height: 2vh;
     background-color: lighten($color, 4%);
@@ -67,7 +67,7 @@ $color: #333; // the rest
   }
   .bubble:nth-child(3) {
     margin-top: 1.8vh;
-    left: 50%;
+    left: 37%;
     width: 1.5vh;
     height: 1.5vh;
     background-color: $color;
@@ -75,7 +75,7 @@ $color: #333; // the rest
   }
   .bubble:nth-child(4) {
     margin-top: 2.7vh;
-    left: 56%;
+    left: 41%;
     width: 1.2vh;
     height: 1.2vh;
     background-color: darken($color, 3%);
@@ -83,7 +83,7 @@ $color: #333; // the rest
   }
   .bubble:nth-child(5) {
     margin-top: 2.7vh;
-    left: 63%;
+    left: 38%;
     width: 1.1vh;
     height: 1.1vh;
     background-color: darken($color, 6%);

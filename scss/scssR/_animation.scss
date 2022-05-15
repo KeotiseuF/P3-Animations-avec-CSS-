@@ -30,7 +30,7 @@
         & p, & h2
         {
             margin: 5px 0px 0px 19px;
-            width: 74%;
+            width: 75%;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -88,7 +88,7 @@
     & input:checked~.checked
     {
         background: $colorN;
-        width: 68px;
+        width: 70px;
         height: 100%;
         display: flex;
         justify-content: center;
