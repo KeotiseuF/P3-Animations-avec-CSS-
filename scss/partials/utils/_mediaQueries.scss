@@ -1,0 +1,22 @@
+$breakpoints:
+(
+    tablette: 590px,
+    pc: 1190px,
+);
+
+@mixin tablette
+{
+    @media screen and (min-width: map-get($breakpoints, tablette))
+    {
+        @content;
+    }
+}
+
+@mixin pc
+{
+    @media screen and (min-width: map-get($breakpoints, pc))
+    {
+        @content;
+    }
+}
+

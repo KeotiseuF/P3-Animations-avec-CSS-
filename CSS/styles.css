@@ -1,3 +1,4 @@
+/*listes*/
 * {
   box-sizing: border-box;
 }
@@ -5,6 +6,15 @@
 body {
   font-family: "Roboto";
   font-size: large;
+}
+body #fond {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
 }
 body h1 {
   font-family: "Roboto-medium";
@@ -27,17 +37,21 @@ body i {
   font-size: larger;
 }
 
-/*listes*/
 #logo {
   width: 50%;
-  margin: 5%;
+  margin: 15px;
+}
+@media screen and (min-width: 590px) {
+  #logo {
+    width: 300px;
+  }
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 45px;
 }
 header #sub_header {
   background-color: rgb(246, 246, 246);
@@ -63,13 +77,13 @@ header #sub_header #localisation p {
 }
 header #sub_header #reservation {
   text-align: center;
-  margin: 12% 0%;
+  margin: 52px 0px;
 }
 header #sub_header #reservation h1 {
   margin: 0% 20%;
 }
 header #sub_header #reservation p {
-  margin: 5% 3%;
+  margin: 22px 13px;
   color: rgba(0, 0, 0, 0.75);
 }
 header #sub_header #reservation input {
@@ -81,7 +95,7 @@ header #sub_header #reservation input {
   border: none;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 5%;
+  margin-top: 15px;
 }
 header #sub_header #reservation input:hover {
   filter: brightness(1.25);
@@ -97,33 +111,22 @@ nav {
   margin-left: 4%;
   height: 365px;
 }
-nav #chiffres {
-  width: 30px;
-  z-index: 1;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 316px;
-  margin-left: 5px;
-}
-nav #chiffres p {
-  background-color: #9356DC;
-  color: white;
-  border-radius: 50%;
-  font-size: medium;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav #chiffres .menu {
-  margin: 33px 0px;
+@media screen and (min-width: 590px) {
+  nav {
+    height: 250px;
+  }
 }
 nav #navigation {
   width: 100%;
   padding-left: 0%;
   margin: 0px 17px;
+}
+@media screen and (min-width: 590px) {
+  nav #navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 nav #navigation a {
   background-color: rgb(246, 246, 246);
@@ -132,10 +135,29 @@ nav #navigation a {
   align-items: center;
   height: 86px;
   border-radius: 27px;
-  padding-left: 38px;
   color: black;
   font-weight: bold;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 590px) {
+  nav #navigation a {
+    margin: 0px 21px 0px 0px;
+    width: 46%;
+    padding-right: 18px;
+  }
+}
+nav #navigation a p {
+  background-color: #9356DC;
+  color: white;
+  border-radius: 50%;
+  font-size: medium;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  position: relative;
+  left: -13px;
 }
 nav #navigation a i {
   margin-right: 20px;
@@ -155,21 +177,37 @@ main {
 main section {
   margin: 13px;
 }
+@media screen and (min-width: 590px) {
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 650px;
+    padding-left: 2%;
+  }
+}
 main section .custom-checkbox {
-  position: absolute;
-  left: 82%;
-  height: 40px;
-  z-index: 1;
-  margin-top: 231px;
+  position: relative;
   font-size: x-large;
+  top: 236px;
+  margin: 0% 89%;
+}
+@media screen and (min-width: 590px) {
+  main section .custom-checkbox {
+    margin: 0% 85%;
+  }
 }
 main section .carte {
   background-color: white;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
-  margin: 2%;
+  margin: 15px 5px;
   border-radius: 17px;
-  margin-bottom: 5%;
   height: 295px;
+}
+@media screen and (min-width: 590px) {
+  main section .carte {
+    width: 47%;
+  }
 }
 main section .carte .cadre_img {
   overflow: hidden;
@@ -316,13 +354,15 @@ footer ul li a .fa-utensils {
   font-weight: normal;
 }
 #bloc_page {
-  animation: page 0ms 30s;
-  position: absolute;
   width: 100%;
-  height: 100%;
   background-color: white;
   top: 0px;
   animation: page 0ms 3s both;
+}
+@media screen and (min-width: 1190px) {
+  #bloc_page {
+    width: 985px;
+  }
 }
 
 #loader {
@@ -342,6 +382,7 @@ footer ul li a .fa-utensils {
   color: #333;
   opacity: 0.75;
   animation: pulse 2.5s linear infinite;
+  padding: 0px 60px;
 }
 
 #cooking {
@@ -563,6 +604,8 @@ footer ul li a .fa-utensils {
 @keyframes page {
   0% {
     transform: translateX(-9999px);
+    height: 0px;
+    overflow: hidden;
   }
   100% {
     transform: translate(0px);

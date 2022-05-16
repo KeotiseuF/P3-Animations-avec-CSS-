@@ -7,7 +7,18 @@ body
 {
     font-family: "Roboto";
     font-size: large;
-    
+
+    & #fond
+    {
+        position: absolute;
+        top: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: linear-gradient($deg-c, $colorP 0%, #FF79DA 100%);
+    }
+
     & h1
 
     {

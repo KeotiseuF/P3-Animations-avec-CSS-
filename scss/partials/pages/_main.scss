@@ -6,25 +6,39 @@ main
     & section
     {
         margin: 13px;
+        @include tablette
+        {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: 650px;
+            padding-left: 2%
+        }
 
         & .custom-checkbox
         {
-            position: absolute;
-            left: 82%;
-            height: 40px;
-            z-index: 1;
-            margin-top: 231px;
+            position: relative;
             font-size: x-large;
+            top: 236px;
+            margin: 0% 89%;
+            @include tablette
+            {
+                margin: 0% 85%;
+            }
+
         }
 
         & .carte
         {
             background-color: white;
             box-shadow: 3px 3px 20px rgba(0, 0, 0, .1);
-            margin: 2%;
+            margin: 15px 5px;
             border-radius: 17px;
-            margin-bottom: 5%;
             height: 295px;
+            @include tablette
+            {
+                width: 47%;
+            }
 
             & .cadre_img
             {

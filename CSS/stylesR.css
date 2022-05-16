@@ -1,3 +1,4 @@
+/*listes*/
 * {
   box-sizing: border-box;
 }
@@ -5,6 +6,15 @@
 body {
   font-family: "Roboto";
   font-size: large;
+}
+body #fond {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
 }
 body h1 {
   font-family: "Roboto-medium";
@@ -27,17 +37,21 @@ body i {
   font-size: larger;
 }
 
-/*listes*/
 #logo {
   width: 50%;
-  margin: 5%;
+  margin: 15px;
+}
+@media screen and (min-width: 590px) {
+  #logo {
+    width: 300px;
+  }
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 45px;
 }
 header #sub_header {
   background-color: rgb(246, 246, 246);
@@ -63,13 +77,13 @@ header #sub_header #localisation p {
 }
 header #sub_header #reservation {
   text-align: center;
-  margin: 12% 0%;
+  margin: 52px 0px;
 }
 header #sub_header #reservation h1 {
   margin: 0% 20%;
 }
 header #sub_header #reservation p {
-  margin: 5% 3%;
+  margin: 22px 13px;
   color: rgba(0, 0, 0, 0.75);
 }
 header #sub_header #reservation input {
@@ -81,7 +95,7 @@ header #sub_header #reservation input {
   border: none;
   cursor: pointer;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  margin-top: 5%;
+  margin-top: 15px;
 }
 header #sub_header #reservation input:hover {
   filter: brightness(1.25);
@@ -327,6 +341,7 @@ footer ul li a .fa-utensils {
   align-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  overflow: hidden;
 }
 .choix .text p, .choix .text h2 {
   margin: 5px 0px 0px 19px;
@@ -375,9 +390,6 @@ footer ul li a .fa-utensils {
   background: #99E2D0;
   width: 70px;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 1;
 }
 .choix input:checked ~ .checked .fleche {

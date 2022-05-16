@@ -33,7 +33,7 @@ header
         & #reservation
         {
             text-align: center;
-            margin: 12% 0%;
+            margin: 52px 0px;
 
             & h1
             {
@@ -42,14 +42,14 @@ header
 
             & p
             {
-                margin: 5% 3%;
+                margin: 22px 13px;
                 color: rgba(0,0,0,0.75);
             }
 
             & input
             {
                 @include button;
-                margin-top: 5%;
+                margin-top: 15px;
 
                 &:hover
                 {

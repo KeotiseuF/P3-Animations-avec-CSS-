@@ -26,6 +26,7 @@
         align-content: space-between;
         flex-wrap: wrap;
         width: 100%;
+        overflow: hidden;
 
         & p, & h2
         {
@@ -90,9 +91,6 @@
         background: $colorN;
         width: 70px;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         opacity: 1;
 
         & .fleche
