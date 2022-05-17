@@ -3,7 +3,7 @@
     display: flex;
     background-color: white;
     border-radius: 20px;
-    margin: 0% 4% 4%;
+    margin: 0px 15px 13px;
     height: 85px;
     box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
     overflow: hidden;
@@ -95,7 +95,7 @@
 
         & .fleche
         {
-            animation: fleche 200ms both;
+            animation: fleche 250ms both;
         }
     } 
 }
