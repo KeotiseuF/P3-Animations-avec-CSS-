@@ -109,12 +109,22 @@ body {
   width: 100%;
   background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
 }
+@media screen and (min-width: 590px) and (max-width: 985px) {
+  body {
+    width: 985px;
+  }
+}
+@media screen and (min-width: 1190px) {
+  body {
+    width: 100%;
+  }
+}
 body #bloc_page {
   width: 100%;
 }
 @media screen and (min-width: 1190px) {
   body #bloc_page {
-    width: 985px;
+    width: 1185px;
   }
 }
 
@@ -203,14 +213,25 @@ main .titreR .custom-checkbox {
   width: 36px;
   margin: 0% 6% 3% 0%;
 }
-main section .titreS {
+@media screen and (min-width: 590px) {
+  main .section {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 590px) {
+  main .section section {
+    width: 33%;
+  }
+}
+main .section section .titreS {
   margin: 30px 19px 0px;
   font-size: large;
   text-transform: uppercase;
   font-family: "Roboto-thin";
   font-weight: bold;
 }
-main section .barre {
+main .section section .barre {
   background-color: #99E2D0;
   width: 48px;
   height: 4px;
@@ -377,6 +398,12 @@ footer ul li a .fa-utensils {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+@media screen and (min-width: 590px) {
+  .choix {
+    padding-right: 15px;
+    height: 90px;
+  }
+}
 .choix .inputC {
   width: 100%;
   height: 100%;
@@ -401,6 +428,11 @@ footer ul li a .fa-utensils {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+@media screen and (min-width: 590px) {
+  .choix .text p, .choix .text h2 {
+    width: 88%;
+  }
+}
 .choix .text p:not(.prix) {
   font-family: "Roboto-thin";
   font-weight: bold;
@@ -411,6 +443,11 @@ footer ul li a .fa-utensils {
   margin: 30px 20px 0px 0px;
   font-weight: bold;
   width: 33px;
+}
+@media screen and (min-width: 590px) {
+  .choix .text .prix {
+    margin: 10px 0px 0px 19px;
+  }
 }
 .choix .checked {
   transition: 200ms linear;
@@ -442,6 +479,11 @@ footer ul li a .fa-utensils {
   width: 70px;
   height: 100%;
   opacity: 1;
+}
+@media screen and (min-width: 590px) {
+  .choix input:checked ~ .checked {
+    margin-right: -16px;
+  }
 }
 .choix input:checked ~ .checked .fleche {
   animation: fleche 250ms both;

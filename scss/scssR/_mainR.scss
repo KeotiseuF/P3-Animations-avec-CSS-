@@ -34,23 +34,36 @@ main
         } 
     }
 
-    & section
+    & .section
     {
-        & .titreS
+        @include tablette
         {
-            margin: 30px 19px 0px;
-            font-size: large;
-            text-transform: uppercase;
-            font-family: "Roboto-thin";
-            font-weight: bold;
+            display: flex;
+            justify-content: center;
         }
 
-        & .barre
+        & section
         {
-            background-color: $colorN;
-            width: 48px;
-            height: 4px;
-            margin: 3px 20px 25px;
+            @include tablette
+            {
+                width: 33%;
+            }
+            & .titreS
+            {
+                margin: 30px 19px 0px;
+                font-size: large;
+                text-transform: uppercase;
+                font-family: "Roboto-thin";
+                font-weight: bold;
+            }
+
+            & .barre
+            {
+                background-color: $colorN;
+                width: 48px;
+                height: 4px;
+                margin: 3px 20px 25px;
+            }
         }
     }
 
@@ -70,5 +83,5 @@ main
                 box-shadow: 0px 8px 15px rgb(0% 0% 0% / 34%);
             }
         }
-    }  
+    } 
 }

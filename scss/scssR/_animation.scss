@@ -7,6 +7,11 @@
     height: 85px;
     box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
     overflow: hidden;
+    @include tablette
+    {
+        padding-right: 15px;
+        height: 90px;
+    }
 
     & .inputC
     {
@@ -35,6 +40,10 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+            @include tablette
+            {
+                width: 88%;
+            }
         }
 
         & p:not(.prix)
@@ -50,6 +59,10 @@
             margin: 30px 20px 0px 0px;            
             font-weight: bold;
             width: 33px;
+            @include tablette
+            {
+                margin: 10px 0px 0px 19px;
+            }
         }
     }
     
@@ -92,6 +105,10 @@
         width: 70px;
         height: 100%;
         opacity: 1;
+        @include tablette
+        {
+            margin-right: -16px;
+        }
 
         & .fleche
         {

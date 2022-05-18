@@ -2,6 +2,7 @@ $breakpoints:
 (
     tablette: 590px,
     pc: 1190px,
+    section: 985px,
 );
 
 @mixin tablette
@@ -15,6 +16,14 @@ $breakpoints:
 @mixin pc
 {
     @media screen and (min-width: map-get($breakpoints, pc))
+    {
+        @content;
+    }
+}
+
+@mixin section
+{
+    @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, section))
     {
         @content;
     }
