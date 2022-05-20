@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss:./CSS --style expanded"
+    "sass": "sass --watch ./scss:./CSS --style expanded",
+    "prefix": "postcss ./CSS/styles.css ./CSS/stylesR.css --use autoprefixer -d ./CSS"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "Keotiseu",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/KeotiseuF/P3-Animations-avec-CSS-/issues"
   },
