@@ -54,17 +54,17 @@
       width: 178px;
       animation: 6s linear infinite rotate;
       color: #278870;
-      bottom: 283px;
+      bottom: 222px;
     }
   
     & .cercle_2 
     {
       @include cercle;
       height: 79px;
-      width: 162px;
+      width: 160px;
       animation: 5s linear infinite rotateR;
       color: #99e2d0;
-      bottom: 293px;
+      bottom: 232px;
     }
   
     & .cercle_3 
@@ -74,7 +74,7 @@
       width: 140px;
       animation: 4s linear infinite rotate;
       color: #278870;
-      bottom: 303px;
+      bottom: 242px;
     }
   
     & .cercle_4 
@@ -84,7 +84,7 @@
       width: 117px;
       animation: 3s linear infinite rotateR;
       color: #99e2d0;
-      bottom: 313px;
+      bottom: 252px;
     }
   
     & .cercle_5 
@@ -94,7 +94,7 @@
       width: 96px;
       animation: 2s linear infinite rotate;
       color: #278870;
-      bottom: 323px;
+      bottom: 262px;
     }
     
     & .cercle_6 
@@ -104,7 +104,7 @@
       width: 78px;
       animation: 1s linear infinite rotateR;
       color: #99e2d0;
-      bottom: 333px;
+      bottom: 272px;
     }
 
 }
