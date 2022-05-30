@@ -309,25 +309,20 @@ footer ul li a .fa-utensils {
   transform: scale(0);
   transform-origin: bottom;
   transition: all 1000ms ease-in-out;
-  background: linear-gradient(#9c47fc, #356ad2);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.unchecked {
+.custom-checkbox .unchecked {
   position: absolute;
+  cursor: pointer;
 }
-
-.custom-checkbox input:checked ~ .checked {
+.custom-checkbox .unchecked:hover + .checked {
   display: inline-block;
   transform: scale(1);
-  background: linear-gradient(#9c47fc, #356ad2);
+  background: linear-gradient(180deg, #9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.custom-checkbox input:checked ~ .unchecked {
-  display: none;
 }
 
 @font-face {

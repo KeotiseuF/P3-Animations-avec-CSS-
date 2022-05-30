@@ -9,32 +9,37 @@
     cursor: pointer;
 }
 
-.custom-checkbox .checked 
+.custom-checkbox  
 {
-  position: absolute;
-  transform: scale(0);
-  transform-origin: bottom;
-  transition: all 1000ms ease-in-out;
-  background: linear-gradient(#9c47fc, #356ad2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.unchecked
-{
+  & .checked
+  {
     position: absolute;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 1000ms ease-in-out;
+    background: linear-gradient($deg-c, $colorP 0%, #FF79DA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & .unchecked
+  {
+      position: absolute;
+      cursor: pointer;
+      
+      &:hover
+      {
+  
+        + .checked
+        {
+          display: inline-block;
+          transform: scale(1);
+          background: linear-gradient($deg-c, $colorP 0%, #FF79DA 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+  }
 }
 
-.custom-checkbox input:checked~.checked 
-{
-  display: inline-block;
-  transform: scale(1);
-  background: linear-gradient(#9c47fc, #356ad2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
-.custom-checkbox input:checked~.unchecked 
-{
-  display: none;
-}
